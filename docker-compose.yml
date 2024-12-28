@@ -1,0 +1,8 @@
+version: '3'
+services:
+  sentiment_analysis:
+    build: .
+    volumes:
+      - ./data:/data
+    command: python process_data.py
+
